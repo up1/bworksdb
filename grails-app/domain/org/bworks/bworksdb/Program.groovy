@@ -4,7 +4,7 @@ class Program {
 
     String name
     String description
-    static hasMany = [lessons:Lessons,classSessions:ClassSessions,interests:Interests]
+    static hasMany = [ lessons:Lesson, classSessions:ClassSession, interests:Interest ]
     
     static constraints = {
     }
