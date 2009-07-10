@@ -1,6 +1,7 @@
+package org.bworks.bworksdb
 import grails.test.*
 
-class LesssonTests extends GrailsUnitTestCase {
+class AttendanceTests extends GrailsUnitTestCase {
     protected void setUp() {
         super.setUp()
     }
