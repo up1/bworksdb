@@ -10,7 +10,8 @@ class StudentTests extends GrailsUnitTestCase {
         super.tearDown()
     }
 
-    void testSomething() {
-
+    void testNotNullLastName() {
+        def s = new Student(firstName:"Groovy in Action")
+        assertFalse s.validate()
     }
 }
