@@ -1,3 +1,4 @@
+package org.bworks.bworksdb
 import grails.test.*
 
 class InterestTests extends GrailsUnitTestCase {
