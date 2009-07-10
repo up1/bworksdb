@@ -8,6 +8,7 @@ class Student {
     Date birthDate
     String gender
     static belongsTo = [Contact]
+    static hasMany = [interests:Interests]
     
     static constraints = {
     }
