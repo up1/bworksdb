@@ -9,7 +9,9 @@ class Student {
     String gender
     static belongsTo = [Contact]
     static hasMany = [ interests:Interest ]
-    
+
     static constraints = {
+        lastName(nullable:false, blank:false)
     }
+    
 }

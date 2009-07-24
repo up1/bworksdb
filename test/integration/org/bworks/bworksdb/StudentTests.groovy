@@ -1,17 +1,12 @@
 package org.bworks.bworksdb
 import grails.test.*
 
-class StudentTests extends GrailsUnitTestCase {
-    protected void setUp() {
-        super.setUp()
-    }
+import org.bworks.bworksdb.Student
 
-    protected void tearDown() {
-        super.tearDown()
-    }
+class StudentTests extends GroovyTestCase {
 
     void testNotNullLastName() {
-        def s = new Student(firstName:"Groovy in Action")
-        assertFalse s.validate()
+        def s = new Student(firstName:"Groovy in Action", lastName:"Foo")
+        assertTrue s.validate()
     }
 }
