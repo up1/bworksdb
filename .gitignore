@@ -4,6 +4,7 @@ html
 stacktrace.log
 test/reports
 web-app/plugins
+web-app/WEB-INF/*.tld
 web-app/index.gsp
 .classpath
 .project
