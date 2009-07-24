@@ -28,10 +28,28 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
+                                    <label for="lastName">Last Name:</label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean:studentInstance,field:'lastName','errors')}">
+                                    <input type="text" id="lastName" name="lastName" value="${fieldValue(bean:studentInstance,field:'lastName')}"/>
+                                </td>
+                            </tr> 
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
                                     <label for="birthDate">Birth Date:</label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean:studentInstance,field:'birthDate','errors')}">
                                     <g:datePicker name="birthDate" value="${studentInstance?.birthDate}" precision="minute" ></g:datePicker>
+                                </td>
+                            </tr> 
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="contact">Contact:</label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean:studentInstance,field:'contact','errors')}">
+                                    <g:select optionKey="id" from="${org.bworks.bworksdb.Contact.list()}" name="contact.id" value="${studentInstance?.contact?.id}" ></g:select>
                                 </td>
                             </tr> 
                         
@@ -50,15 +68,6 @@
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean:studentInstance,field:'gender','errors')}">
                                     <input type="text" id="gender" name="gender" value="${fieldValue(bean:studentInstance,field:'gender')}"/>
-                                </td>
-                            </tr> 
-                        
-                            <tr class="prop">
-                                <td valign="top" class="name">
-                                    <label for="lastName">Last Name:</label>
-                                </td>
-                                <td valign="top" class="value ${hasErrors(bean:studentInstance,field:'lastName','errors')}">
-                                    <input type="text" id="lastName" name="lastName" value="${fieldValue(bean:studentInstance,field:'lastName')}"/>
                                 </td>
                             </tr> 
                         
