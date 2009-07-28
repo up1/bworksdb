@@ -1,2 +1,43 @@
-This is for bworks volunteer program
-greg added this. 
+This is for the bworks volunteer program
+
+
+Purpose:  Maintain student contact and enrollment information.
+
+Data structure:
+
+Program ->
+  Describes one of the volunteer programs that are available at Bworks.
+  Example: Earn-A-Computer Program
+           Earn-A-Bike Program
+           Byteworks Mentorship Program
+
+ClassSession ->
+  A group of dates/lessons that pertain to a Program.
+  Example: Earn-A-Computer Program, July 2009 Session
+           Earn-A-Bike Program, February 2009 Session
+
+   belongs to a Program
+   Has Many LessonDates (Example: LessonDate #1 is July 1st, 2009
+                                  LessonDate #2 is July 8th, 2009
+                                  LessonDate #3 is July 15th, 2009)
+
+Student ->
+  Has many Enrollments
+
+
+Enrollment ->
+  Joins Students and ClassSessions
+  Example: Student "Barney" is enrolled in the following Class Sessions:
+                   1) Earn-A-Computer Program, July 2009 Session
+                   2) Earn-A-Bike Program, February 2009 Session
+
+Attendance.groovy
+ClassSession.groovy
+Contact.groovy
+Enrollment.groovy
+Interest.groovy
+Lesson.groovy
+LessonDate.groovy
+Note.groovy
+PhoneNumber.groovy
+Program.groovy
