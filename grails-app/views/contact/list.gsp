@@ -21,8 +21,8 @@
                     <thead>
                         <tr>
                         
-                   	        <g:sortableColumn property="id" title="Id" />
-                        
+                            <g:sortableColumn property="lastName" title="Name" />
+                   	        
                    	        <g:sortableColumn property="address1" title="Address1" />
                         
                    	        <g:sortableColumn property="address2" title="Address2" />
@@ -39,7 +39,7 @@
                     <g:each in="${contactInstanceList}" status="i" var="contactInstance">
                         <tr class="${(i % 2) == 0 ? 'odd' : 'even'}">
                         
-                            <td><g:link action="show" id="${contactInstance.id}">${fieldValue(bean:contactInstance, field:'id')}</g:link></td>
+                            <td><g:link action="show" id="${contactInstance.id}">${contactInstance}</g:link></td>
                         
                             <td>${fieldValue(bean:contactInstance, field:'address1')}</td>
                         

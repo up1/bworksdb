@@ -23,15 +23,15 @@
                         
                    	        <g:sortableColumn property="id" title="Id" />
                         
+                   	        <g:sortableColumn property="lastName" title="Last Name" />
+                        
                    	        <g:sortableColumn property="birthDate" title="Birth Date" />
                         
+                   	        <th>Contact</th>
+                   	    
                    	        <g:sortableColumn property="firstName" title="First Name" />
                         
                    	        <g:sortableColumn property="gender" title="Gender" />
-                        
-                   	        <g:sortableColumn property="lastName" title="Last Name" />
-                        
-                   	        <g:sortableColumn property="middleName" title="Middle Name" />
                         
                         </tr>
                     </thead>
@@ -41,15 +41,15 @@
                         
                             <td><g:link action="show" id="${studentInstance.id}">${fieldValue(bean:studentInstance, field:'id')}</g:link></td>
                         
+                            <td>${fieldValue(bean:studentInstance, field:'lastName')}</td>
+                        
                             <td>${fieldValue(bean:studentInstance, field:'birthDate')}</td>
+                        
+                            <td>${fieldValue(bean:studentInstance, field:'contact')}</td>
                         
                             <td>${fieldValue(bean:studentInstance, field:'firstName')}</td>
                         
                             <td>${fieldValue(bean:studentInstance, field:'gender')}</td>
-                        
-                            <td>${fieldValue(bean:studentInstance, field:'lastName')}</td>
-                        
-                            <td>${fieldValue(bean:studentInstance, field:'middleName')}</td>
                         
                         </tr>
                     </g:each>

@@ -25,7 +25,25 @@
                 <div class="dialog">
                     <table>
                         <tbody>
-                        
+                          
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="firstName">First Name:</label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean:contactInstance,field:'firstName','errors')}">
+                                    <input type="text" id="firstName" name="firstName" value="${fieldValue(bean:contactInstance,field:'firstName')}"/>
+                                </td>
+                            </tr> 
+                      
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="lastName">Last Name:</label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean:contactInstance,field:'lastName','errors')}">
+                                    <input type="text" id="lastName" name="lastName" value="${fieldValue(bean:contactInstance,field:'lastName')}"/>
+                                </td>
+                            </tr>
+                          
                             <tr class="prop">
                                 <td valign="top" class="name">
                                     <label for="address1">Address1:</label>
@@ -46,33 +64,6 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                    <label for="emailAddress">Email Address:</label>
-                                </td>
-                                <td valign="top" class="value ${hasErrors(bean:contactInstance,field:'emailAddress','errors')}">
-                                    <input type="text" id="emailAddress" name="emailAddress" value="${fieldValue(bean:contactInstance,field:'emailAddress')}"/>
-                                </td>
-                            </tr> 
-                        
-                            <tr class="prop">
-                                <td valign="top" class="name">
-                                    <label for="firstName">First Name:</label>
-                                </td>
-                                <td valign="top" class="value ${hasErrors(bean:contactInstance,field:'firstName','errors')}">
-                                    <input type="text" id="firstName" name="firstName" value="${fieldValue(bean:contactInstance,field:'firstName')}"/>
-                                </td>
-                            </tr> 
-                        
-                            <tr class="prop">
-                                <td valign="top" class="name">
-                                    <label for="lastName">Last Name:</label>
-                                </td>
-                                <td valign="top" class="value ${hasErrors(bean:contactInstance,field:'lastName','errors')}">
-                                    <input type="text" id="lastName" name="lastName" value="${fieldValue(bean:contactInstance,field:'lastName')}"/>
-                                </td>
-                            </tr> 
-                        
-                            <tr class="prop">
-                                <td valign="top" class="name">
                                     <label for="state">State:</label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean:contactInstance,field:'state','errors')}">
@@ -88,6 +79,15 @@
                                     <input type="text" id="zipCode" name="zipCode" value="${fieldValue(bean:contactInstance,field:'zipCode')}"/>
                                 </td>
                             </tr> 
+                            
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="emailAddress">Email Address:</label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean:contactInstance,field:'emailAddress','errors')}">
+                                    <input type="text" id="emailAddress" name="emailAddress" value="${fieldValue(bean:contactInstance,field:'emailAddress')}"/>
+                                </td>
+                            </tr>
                         
                         </tbody>
                     </table>

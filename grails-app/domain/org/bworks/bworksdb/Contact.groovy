@@ -13,4 +13,7 @@ class Contact {
     
     static constraints = {
     }
+    String toString(){
+        return lastName + ',' + firstName
+    }
 }

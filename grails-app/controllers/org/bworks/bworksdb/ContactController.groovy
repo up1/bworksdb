@@ -92,7 +92,7 @@ class ContactController {
         def contactInstance = new Contact(params)
         if(!contactInstance.hasErrors() && contactInstance.save()) {
             flash.message = "Contact ${contactInstance.id} created"
-            redirect(action:show,id:contactInstance.id)
+            redirect(action:create,controller:"student",params:["contact.id":contactInstance.id])
         }
         else {
             render(view:'create',model:[contactInstance:contactInstance])

@@ -30,9 +30,23 @@
                         </tr>
                     
                         <tr class="prop">
+                            <td valign="top" class="name">Last Name:</td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean:studentInstance, field:'lastName')}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
                             <td valign="top" class="name">Birth Date:</td>
                             
                             <td valign="top" class="value">${fieldValue(bean:studentInstance, field:'birthDate')}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name">Contact:</td>
+                            
+                            <td valign="top" class="value"><g:link controller="contact" action="show" id="${studentInstance?.contact?.id}">${studentInstance?.contact?.encodeAsHTML()}</g:link></td>
                             
                         </tr>
                     
@@ -60,13 +74,6 @@
                                 </g:each>
                                 </ul>
                             </td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name">Last Name:</td>
-                            
-                            <td valign="top" class="value">${fieldValue(bean:studentInstance, field:'lastName')}</td>
                             
                         </tr>
                     
